@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "drone_uses",
+  "info": {
+    "singularName": "drone-use",
+    "pluralName": "drone-uses",
+    "displayName": "Drone Use"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "droneUse": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "quote_infos",
+  "info": {
+    "singularName": "quote-info",
+    "pluralName": "quote-infos",
+    "displayName": "Quote Info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::image.image"
+    },
+    "droneUses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::drone-use.drone-use"
+    }
+  }
+}

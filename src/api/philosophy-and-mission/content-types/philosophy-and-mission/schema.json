@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "philosophy_and_missions",
+  "info": {
+    "singularName": "philosophy-and-mission",
+    "pluralName": "philosophy-and-missions",
+    "displayName": "Philosophy And Mission"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "backgroundImage": {
+      "type": "string"
+    }
+  }
+}
