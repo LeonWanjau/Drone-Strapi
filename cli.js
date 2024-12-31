@@ -42,7 +42,7 @@ const generateApiToken = async () => {
   // const tokenId = (await service.getByName("test")).id;
   // const token = await service.regenerate(tokenId)
   const service = await app.service("admin::api-token");
-  const tokenName = "test3";
+  const tokenName = "strapi-token";
   let tokenAttrs = await service.getByName(tokenName);
   if (!!!tokenAttrs) {
     const attributes = {
@@ -52,12 +52,15 @@ const generateApiToken = async () => {
       lifespan: null,
     };
     tokenAttrs = await app.service("admin::api-token").create(attributes);
-  } else {
-    const tokenId = tokenAttrs.id;
-    tokenAttrs = await service.regenerate(tokenId);
-  }
-  console.log(tokenAttrs.accessKey);
+  } 
   process.exit(0);
+  
+  // else {
+  //   const tokenId = tokenAttrs.id;
+  //   tokenAttrs = await service.regenerate(tokenId);
+  // }
+  // console.log(tokenAttrs.accessKey);
+  // process.exit(0);
 };
 
 generateApiToken();
